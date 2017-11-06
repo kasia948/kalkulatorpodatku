@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Przykład Tymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<h1>Kalkulator podatkowy</h1>
+
+<form action="/calculate" method="post" th:object="${input}">
+    <input th:field="*{income}" />
+    <input type="submit" value="Policz" />
+</form>
+
+</body>
+
+</html>
